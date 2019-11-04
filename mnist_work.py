@@ -48,17 +48,4 @@ if __name__ == "__main__":
     
     num_of_equal = np.count_nonzero(Y_test == np.array(predicted_labels))
     accuracy_value = num_of_equal / test_count
-    print('k_value =', k_value, '; accuracy_value =', accuracy_value)
-    
-    
-    import matplotlib.pyplot as plt
-    
-    keys = [3,5,7,11,15,19,25,35,41,51,71,81,91,101,201,301,401]
-    values = [0.8575,0.8623,0.8628,0.8589,0.8536,0.8521,0.8468,0.8421,0.8392,0.835,0.8299,0.8284,0.8269,0.825,0.8102,0.7995,0.793]
-    
-    plt.ylabel('Accuracy'); plt.xlabel('K-value')
-
-    plt.plot(values)
-    plt.yticks(values)
-    plt.xticks(keys)
-    
+    print('k_value =', k_value, '; accuracy_value =', accuracy_value)    
