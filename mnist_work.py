@@ -26,7 +26,7 @@ def prediction_labels(X_train, Y_train, X_test):
 
 if __name__ == "__main__":
     
-    k_value = 401; num_per_chunk = 10; chunk_index = 0
+    k_value = 11; num_per_chunk = 10; chunk_index = 0
     X_train, Y_train = mnist_reader.load_mnist('data', kind='train')
     X_test, Y_test = mnist_reader.load_mnist('data', kind='t10k')
         
